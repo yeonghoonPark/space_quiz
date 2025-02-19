@@ -1,6 +1,6 @@
 import { ButtonHTMLAttributes, forwardRef, memo, ReactNode } from "react";
 import classNames from "classnames";
-import css from "../../styles/Button.module.less";
+import css from "./Button.module.less";
 
 type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & {
   children?: ReactNode;

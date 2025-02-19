@@ -1,0 +1,51 @@
+@import "./common.module.less";
+
+/* default style */
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: @button-padding-small;
+  background-color: @primary-color;
+  border: @button-border;
+  border-radius: @border-radius;
+  color: @text-color-light;
+  font-size: @font-size-default;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.1s ease;
+
+  /* hover */
+  &:hover {
+    background-color: @primary-color-hover;
+    border-color: @primary-color-hover;
+    transform: translateY(-2px);
+  }
+
+  /* active */
+  &:active {
+    background-color: @primary-color-active;
+    border-color: @primary-color-active;
+    transform: translateY(1px);
+  }
+
+  /* disabled */
+  &.disabled {
+    background-color: @disabled-color;
+    border-color: @disabled-color;
+    color: @text-color-dark;
+    cursor: not-allowed;
+    pointer-events: none;
+  }
+
+  /* size */
+  &.small {
+    padding: @button-padding-small;
+    font-size: @font-size-small;
+  }
+
+  &.large {
+    padding: @button-padding-large;
+    font-size: @font-size-large;
+  }
+}
